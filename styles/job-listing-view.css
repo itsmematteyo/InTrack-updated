@@ -1,0 +1,230 @@
+/* job VIEW STYLES */
+.job-view-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.job-view-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.job-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.job-view-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.job-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.job-status.approved {
+    background: #e6f7ee;
+    color: #00a651;
+}
+
+.job-status.rejected {
+    background: #ffebee;
+    color: #f44336;
+}
+
+.job-view-body {
+    margin-bottom: 20px;
+}
+
+.job-view-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.job-view-group {
+    flex: 1;
+    min-width: 250px;
+}
+.job-view-group h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.job-view-group-bottom {
+    margin-top: 2rem;
+}
+
+.job-view-group-bottom h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.job-view-item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.job-view-label {
+    font-weight: 600;
+    color: #555;
+    min-width: 180px;
+}
+
+.job-view-value {
+    color: #333;
+}
+
+/* Enhanced text styling with more specific selectors */
+.job-view-text {
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.job-view-text p,
+.job-view-card p {
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+    color: inherit;
+    line-height: inherit;
+    font-size: 1rem;
+}
+
+.job-view-text p:last-child,
+.job-view-card p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* List styling with more specificity */
+.job-view-list {
+    padding-left: 20px;
+    margin: 10px 0 15px 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.job-view-list li {
+    margin-bottom: 8px;
+    color: inherit;
+    line-height: inherit;
+    font-size: 1rem;
+}
+
+.job-view-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer actions */
+.job-view-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.job-back-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.job-back-btn:hover {
+    background: #e0e0e0;
+}
+
+.job-back-btn i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.job-action-btns {
+    display: flex;
+    gap: 15px;
+}
+@media (max-width: 768px) {
+    .job-view-container {
+        padding: 15px;
+    }
+    
+    .job-view-card {
+        padding: 20px;
+    }
+    
+    .job-view-row {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .job-view-group {
+        min-width: 100%;
+    }
+    
+    .job-view-label {
+        min-width: 150px;
+    }
+    
+    .job-view-footer {
+        flex-direction: column-reverse;
+        gap: 15px;
+        align-items: stretch;
+        margin-top: 15px;
+    }
+    
+    .job-action-btns {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .job-reject-btn,
+    .job-approve-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .job-back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .job-view-text p,
+    .job-view-card p {
+        margin-bottom: 12px !important;
+        font-size: 0.95rem;
+    }
+    
+    .job-view-list li {
+        font-size: 0.95rem;
+    }
+}
